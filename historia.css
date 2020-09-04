@@ -1,0 +1,134 @@
+.Historia-da-Empresa{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, rgb(253, 236, 208),rgba(246, 236, 174, 0.979), rgba(253, 203, 122, 0.979));
+    }
+    
+    .titulo{
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .titulo p{
+        color:rgb(246, 244, 244);
+        font-size: 2.4rem;
+        font-weight: 600;
+        text-shadow: -0.2rem -0.1rem 3px rgba(0, 0, 0, 0.3);
+    }
+    .Area-Historia{
+        width: 100%;
+        height: 90vh;
+        display: flex;
+    }
+    
+    
+    .img-wrapper{
+      width:60%;
+      position: relative;
+      background-color: rgba(0, 0, 0, 0.7);
+      transform: scale(0);
+        opacity: 0;
+        transition: transform 1s ease-in-out;
+    
+    }
+    .img-wrapper.is-visible{
+        transform: scale(1);
+        opacity:1;
+        
+    } 
+    
+    .img-wrapper img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: .7;
+    }
+    
+    .img-wrapper::before{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 4rem;
+        left: 0;
+        background:linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+      }
+       .img-wrapper::after{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 4rem;
+        right: 0;
+        background:linear-gradient(to left,rgba(0, 0, 0, 0.3),transparent );
+      } 
+    
+    
+    
+    .historia{
+    width:40%;
+    position: relative;
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 1s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .historia p{
+        color:rgb(49, 44, 44);
+        font-size: 2rem;
+        margin: 3rem;
+        
+    
+    }
+    .historia.is-visible{
+        transform: scale(1);
+        opacity:1;
+    } 
+    
+    .historia::after{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 2rem;
+        left: 0;
+        background:linear-gradient(to right,  rgba(0, 0, 0,0.2), transparent);
+      } 
+    
+      .historia::before{
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 2rem;
+        right: 0;
+        background:linear-gradient(to left,  rgba(0, 0, 0,0.2), transparent);
+      } 
+
+      @media(max-width:768px){
+
+        .Area-Historia{
+            display: flex;
+            flex-direction: column;
+        }
+        .img-wrapper{
+            order: 1;
+            width: 100%;
+            height: 50%;
+        }
+        .historia{
+            order: 2;
+            width: 100%;
+            height: 50%;
+        }
+        .historia::before{
+            content: "";
+            display: none;
+        }
+        .historia::after{
+            content: "";
+            display: none;
+        }
+    }  
+    
