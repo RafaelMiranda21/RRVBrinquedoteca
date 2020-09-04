@@ -17,7 +17,7 @@
     width: 100%;
     position: relative;
     overflow: hidden;
-    background-image: url("background-criança.jpg");
+    background-image: url("/imagens/background-criança.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -109,4 +109,19 @@
     height: 100vh;
 }
 
+
+  @media(max-width:768px){
+    :root{
+        font-size: 70%;
+    }
+    .img-brinquedoteca img{
+        left: 23%;
+    }
+    #mao-e-robo,
+    #mao-d-robo,
+    #robo-menu{
+        display: none;
+    }
+    
+}  
 

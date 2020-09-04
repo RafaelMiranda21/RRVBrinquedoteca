@@ -21,7 +21,7 @@
 
 .change .menu-hamburguer span{
     display: none;
-    
+
 }
 .change .menu-hamburguer {
     border: none;
@@ -64,6 +64,37 @@
     background-color: #fff;
 }
 
+#robo-menu{
+    position: fixed;
+    width: 12rem;
+    right: -20rem;
+    top: calc(100vh - 65vh); 
+    transition: all 1s;
+}
+
+.change #robo-menu{
+    right: 16rem;
+}
+
+
+#mao-d-robo{
+    position: absolute;
+    width: 8rem;
+    left: 0rem;
+}
+#mao-e-robo{
+    position: absolute;
+    width: 8rem;
+    left: 0rem;
+}
+
+ #mao-e-robo{
+     top: calc(100vh - 75vh); 
+}
+
+#mao-d-robo{
+    top: calc(100vh - 40vh); 
+} 
 
 .sidebar{
     display: flex;
@@ -124,3 +155,5 @@
 .nav-link:hover::before{
     transform: scaleX(1);
 }
+
+ 
