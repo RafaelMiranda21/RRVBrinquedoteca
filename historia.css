@@ -122,6 +122,9 @@
             width: 100%;
             height: 50%;
         }
+          .historia p{
+            font-size: 1.6rem;
+        }
         .historia::before{
             content: "";
             display: none;
