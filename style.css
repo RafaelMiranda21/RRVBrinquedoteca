@@ -11,17 +11,49 @@
 
 }
 
-::-webkit-scrollbar{
 
-}
-::-webkit-scrollbar-track{
-    color: saddlebrown;
-}
 
 html{
     scroll-behavior: smooth;
 }
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 40%;
+    z-index: 3;
+}
+.fab,.fas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 2rem;
+   height: 2rem;
+   border-radius:0.4rem;
+   font-size: 1.5rem;
+   cursor: pointer;
+}
 
+.fa-facebook-f{
+    background: darkblue;
+}
+.fa-whatsapp{
+    background: linear-gradient(to top,rgb(1, 122, 1) ,rgb(3, 211, 3));
+}
+.fa-instagram{
+    background: linear-gradient(to top, rgb(211, 102, 0) ,rgb(206, 44, 3), rgb(73, 2, 131), rgb(47, 0, 255));
+}
+.fa-envelope{
+    background: rgb(251, 38, 0);
+}
+
+.fab:hover,.fas:hover{
+
+    width: 3.2rem;
+}
 .header{
     height: 100vh;
     width: 100%;
