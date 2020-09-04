@@ -110,7 +110,7 @@
 }
 
 
-  @media(max-width:768px){
+ @media(max-width:768px){
     :root{
         font-size: 70%;
     }
@@ -119,9 +119,12 @@
     }
     #mao-e-robo,
     #mao-d-robo,
-    #robo-menu{
+    #robo-menu,
+    #chat-robo,
+    .logo img{
         display: none;
     }
-    
+
 }  
+
 
