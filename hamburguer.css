@@ -7,29 +7,31 @@
     background: #5433FF;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    transition: all 1s;
     display: flex;
     z-index: 2;
     justify-content: space-evenly;
     align-items: center;
-    transition: all 1s;
     box-shadow: .7rem .2rem 4px rgba(0, 0, 0, .9);
 }
 
 .menu-hamburguer span{
    color: blue;
-   transition:  all 1s;
 }
 
 .change .menu-hamburguer span{
     display: none;
+    
 }
 .change .menu-hamburguer {
     border: none;
+    right: 10rem;
+    background: none;
+    box-shadow: none;
 }
 
 .hambuguer{
-    width: 2rem;
+    width: 1.4rem;
     height: 2rem;
     display: flex;
     flex-direction: column;
@@ -38,10 +40,7 @@
     transition: all 2s;
 }
 .change .hambuguer{
-    right: 13rem;
-    position: fixed;
-    z-index: 2;
-    opacity: 1;
+    transition: all 2s;
 }
  .line{
     width: 100%;
@@ -51,7 +50,7 @@
 }
 
 .change .line1{
-    transform: rotateZ(-400deg) translate(-0rem , -.4rem);
+    transform: rotateZ(-411deg) translate(0.5rem, -0.4rem);
     background-color: #fff;
 
 }
@@ -61,7 +60,7 @@
 }
 
 .change .line3{
-    transform: rotateZ(400deg) translate(-1rem , -.9rem);
+    transform: rotateZ(411deg) translate(-1.3rem, -1.1rem);
     background-color: #fff;
 }
 
