@@ -6,11 +6,21 @@
    background: linear-gradient(to right, rgb(253, 236, 208),rgba(53, 212, 240, 0.979),rgba(7, 140, 163, 0.979));
 }
 
+
+
+
+
+
+
+
+
 .slide{
     display: flex;
     height: 90vh;
     position: absolute;
 }
+
+
 
 .imagem{
     width:60%;
@@ -52,6 +62,7 @@
     margin: 3rem;
     margin-left: 5rem;
 }
+
 .indicador-slide{
     width: 100vw;
     position: absolute;
@@ -63,7 +74,7 @@
 .ponto-indicador-slide{
     height: 1rem;
     width: 1rem;
-    border: 2px solid #ff7300;
+    border: 2px solid rgba(14, 111, 238, 0.979);
     border-radius: 8px;
     margin-left: 6px;
     margin-right: 6px; 
@@ -76,7 +87,7 @@
 
 
 .ativo, .ponto-indicador-slide:hover {
-    background-color: #ff7300;
+    background-color:rgba(53, 212, 240, 0.979);
     }
 
 
