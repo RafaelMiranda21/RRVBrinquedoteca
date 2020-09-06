@@ -12,10 +12,10 @@
 }
 
 
-
 html{
     scroll-behavior: smooth;
 }
+
 .redes-sociais{
     display: flex;
     flex-direction: column;
@@ -25,6 +25,7 @@ html{
     left: 0;
     top: 40%;
     z-index: 3;
+    display: none;
 }
 .fab,.fas{
     display: flex;
@@ -35,6 +36,7 @@ html{
    border-radius:0.4rem;
    font-size: 1.5rem;
    cursor: pointer;
+   margin-top: 2px;
 }
 
 .fa-facebook-f{
@@ -54,12 +56,14 @@ html{
 
     width: 3.2rem;
 }
+
+
 .header{
     height: 100vh;
     width: 100%;
     position: relative;
     overflow: hidden;
-    background-image: url("background-criança.jpg");
+    background-image: url("/imagens/background-criança.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -133,16 +137,6 @@ html{
   animation-delay: 2s;
 }
 
-.imagem-parallax{
-    width: 100%;
-    height: 30vh;
-    background-image: url("background-criança\ -\ Copia.jpg");
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-
 @keyframes movRobo{
    0%{
     transform: translateX(-1000px);
@@ -160,6 +154,15 @@ html{
 }
 
 
+.imagem-parallax{
+    width: 100%;
+    height: 30vh;
+    background-image: url("/imagens/background-criança\ -\ Copia.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 
   @media(max-width:768px){
     :root{
@@ -168,6 +171,11 @@ html{
     .img-brinquedoteca img{
         left: 23%;
     }
+
+    .redes-sociais{
+        display: none;
+    }
+
     #mao-e-robo,
     #mao-d-robo,
     #robo-menu,
