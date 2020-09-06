@@ -3,7 +3,7 @@
    height: 100vh;
    position: relative;
    overflow: hidden;
-   background: linear-gradient(to right, rgb(253, 236, 208),rgba(246, 236, 174, 0.979), rgba(253, 203, 122, 0.979));
+   background: linear-gradient(to right, rgb(253, 236, 208),rgba(53, 212, 240, 0.979),rgba(7, 140, 163, 0.979));
 }
 
 .slide{
@@ -24,6 +24,21 @@
     
 }
 
+.titulo-slide{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-slide p{
+    color:rgba(30, 6, 246, 0.979);
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-shadow: -0.3rem 0.1rem 5px rgba(0, 0, 0, 0.4);
+}
+
 .texto{
     width: 40%;
     width:40%;
@@ -37,7 +52,6 @@
     margin: 3rem;
     margin-left: 5rem;
 }
-
 .indicador-slide{
     width: 100vw;
     position: absolute;
