@@ -192,4 +192,6 @@ textarea {
     .auxiliar p{
         display: none;
     }
+    .fab,.fas{
+        font-size:1.4rem;
 }
