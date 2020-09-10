@@ -6,25 +6,17 @@
    background: linear-gradient(to right, rgb(253, 236, 208),rgba(53, 212, 240, 0.979),rgba(7, 140, 163, 0.979));
 }
 
-
-
-
-
-
-
-
-
 .slide{
     display: flex;
     height: 90vh;
-    position: absolute;
 }
 
 
 
 .imagem{
     width:60%;
-    height: 100%;   
+    height: 100%; 
+    
 }
 
 .imagem img{

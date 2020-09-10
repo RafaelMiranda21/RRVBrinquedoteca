@@ -1,0 +1,195 @@
+.contato {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #fdd0d0, rgba(250, 146, 146, 0.979), rgba(250, 87, 87, 0.979));
+}
+
+.tituloContato {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloContato p {
+    color: rgb(255, 0, 0);
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-shadow: -0.3rem -0.1rem 6px rgba(0, 0, 0, 0.3);
+}
+
+.bloco_contato {
+    height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bloco_redeSocial {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.whatsapp a,
+.facebook a,
+.instagram a,
+.email a {
+    display: flex;
+    align-items: center;
+}
+
+.whatsapp p,
+.facebook p,
+.instagram p,
+.email p {
+    font-size: 1.5rem;
+    color: rgb(49, 44, 44);
+}
+
+.fab,
+.fas {
+    font-size: 3rem;
+    color: #ffffff;
+    padding: 0.3rem;
+    border-radius: 15%;
+    border: 1px solid black;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.fa-whatsapp {
+    background-color: rgb(44, 255, 1);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.fa-instagram {
+    background: #f09433;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.fa-facebook-f {
+    background-color: rgb(0, 78, 194);
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+}
+
+.fa-envelope {
+    background-color: rgb(177, 5, 5);
+}
+
+
+
+
+
+
+
+fieldset {
+    padding:2rem;
+    border: 2px solid #000; 
+  }
+
+  legend{
+      font-size: 2rem;
+
+  }
+
+.bloco_email {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bloco_email button{
+    width: 100%;
+    height: 3rem;
+    cursor: pointer;
+    border-radius: 3rem;
+    border: 2px solid #000;
+    background: linear-gradient(to right, #fdd0d0, rgba(250, 146, 146, 0.979), rgba(250, 87, 87, 0.979));
+    transition: transform 2s ease-in-out;
+}
+
+.bloco_email button:hover{
+    box-shadow: 0.4rem 0.3rem 4px rgba(0, 0, 0, 0.4);
+}
+
+.input-group {
+    position: relative;
+    font-size: 2px;
+}
+
+.field {
+    background: transparent;
+    border: none;
+    width: 20rem;
+    font-size: 1.5rem;
+    border-bottom: 2px dashed #000;
+    height: 3rem;
+    outline: none;
+    margin: 1rem 0;
+}
+
+.input-group textarea {
+    padding-top: 1rem;
+    max-width: 25rem;
+    max-height: 10rem;
+}
+
+
+
+
+.field-label {
+    position: absolute;
+    left: 0;
+    top: 0.5rem;
+    font-size: 1rem;
+    color: black;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.field:focus~label {
+    top: 0;
+    font-size: 0.7rem;
+}
+
+.field:focus {
+    border-bottom: 1px solid #000;
+}
+
+
+input,
+textarea {
+    color: #fff;
+}
+
+
+
+@media (max-width:768px){
+    .bloco_contato{
+        flex-direction: column;
+    }
+    .bloco_email{
+        order:1;
+    }
+    .bloco_redeSocial{
+        order: 2;
+        flex-direction: none;
+    }
+    .auxiliar{
+        display: flex;
+    }
+    .auxiliar p{
+        display: none;
+    }
+}
