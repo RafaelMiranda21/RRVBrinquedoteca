@@ -63,7 +63,7 @@ html{
     width: 100%;
     position: relative;
     overflow: hidden;
-    background-image: url("/imagens/background-criança.jpg");
+    background-image: url("background-criança.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -157,7 +157,7 @@ html{
 .imagem-parallax{
     width: 100%;
     height: 30vh;
-    background-image: url("/imagens/background-criança\ -\ Copia.jpg");
+    background-image: url("background-criança\ -\ Copia.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -166,7 +166,7 @@ html{
 .contato-parallax{
     width: 100%;
     height: 30vh;
-    background-image: url("/imagens/contato-parallax.jpg");
+    background-image: url("contato-parallax.jpg");
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
